@@ -49,7 +49,7 @@ devtools::load_all("~/Desktop/MetricGraph")
 library(Matrix)
 library(dplyr)
 library(rSPDE)
-source("~/Desktop/MetricGraph/lenin/minimal_functions.R")
+source("~/Desktop/ratAPPROX/lenin/minimal_functions.R")
 ```
 
 
