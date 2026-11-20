@@ -272,7 +272,7 @@ summary(fit)
     ## Number of function calls by 'optim' = 56
     ## Optimization method used in 'optim' = L-BFGS-B
     ## 
-    ## Time used to:     fit the model =  16.89781 secs
+    ## Time used to:     fit the model =  15.4074 secs
 
 An improved estimate of the Hessian can be obtained by setting
 `improve_hessian` to `TRUE`, which improves the precision of the
@@ -325,8 +325,8 @@ summary(fit)
     ## Number of function calls by 'optim' = 56
     ## Optimization method used in 'optim' = L-BFGS-B
     ## 
-    ## Time used to:     fit the model =  14.96589 secs 
-    ##   compute the Hessian = 2.41806 secs
+    ## Time used to:     fit the model =  13.48714 secs 
+    ##   compute the Hessian = 2.20128 secs
 
 We can also obtain additional information by using the function
 [`glance()`](https://davidbolin.github.io/MetricGraph/reference/glance.graph_lme.md):
@@ -490,7 +490,7 @@ summary(fit_fixed)
     ## Number of function calls by 'optim' = 63
     ## Optimization method used in 'optim' = L-BFGS-B
     ## 
-    ## Time used to:     fit the model =  15.92086 secs
+    ## Time used to:     fit the model =  14.90961 secs
 
 ``` r
 
@@ -606,8 +606,8 @@ summary(fit_repl)
     ## Number of function calls by 'optim' = 118
     ## Optimization method used in 'optim' = L-BFGS-B
     ## 
-    ## Time used to:     fit the model =  58.08915 secs 
-    ##   set up the parallelization = 2.42219 secs
+    ## Time used to:     fit the model =  57.53301 secs 
+    ##   set up the parallelization = 2.20079 secs
 
 Let us also take a glance of the fit:
 
@@ -746,9 +746,9 @@ the `result` object:
 ```
 
     ##             mean        sd 0.025quant 0.5quant 0.975quant     mode
-    ## std.dev 1.393450 0.1564170   1.117050 1.382400   1.730600 1.357340
-    ## range   0.184467 0.0492724   0.108009 0.177487   0.300339 0.163807
-    ## nu      0.691709 0.0959124   0.511181 0.689356   0.886465 0.685403
+    ## std.dev 1.393610 0.1567410   1.116950 1.382410   1.731750 1.356930
+    ## range   0.183712 0.0490814   0.107594 0.176740   0.299172 0.163066
+    ## nu      0.693221 0.0969186   0.510772 0.690866   0.889961 0.686991
 
 Let us compare with the true values:
 
@@ -772,9 +772,9 @@ Let us compare with the true values:
 ```
 
     ##   parameter true      mean      mode
-    ## 1   std.dev 1.30 1.3934544 1.3573381
-    ## 2     range 0.15 0.1844671 0.1638070
-    ## 3        nu 0.80 0.6917087 0.6854034
+    ## 1   std.dev 1.30 1.3936130 1.3569305
+    ## 2     range 0.15 0.1837118 0.1630660
+    ## 3        nu 0.80 0.6932210 0.6869908
 
 We can also plot the posterior marginal densities with the help of the
 [`gg_df()`](https://davidbolin.github.io/MetricGraph/reference/gg_df.metric_graph_spde_result.md)
@@ -981,9 +981,9 @@ function:
 ```
 
     ##             mean         sd 0.025quant 0.5quant 0.975quant     mode
-    ## std.dev 1.325500 0.02528080   1.275310 1.325800   1.374580 1.327070
-    ## range   0.169632 0.00735858   0.155220 0.169657   0.184095 0.169946
-    ## nu      0.701438 0.02300620   0.658059 0.700723   0.748326 0.698457
+    ## std.dev 1.325520 0.02490170   1.274070 1.326740   1.371440 1.331290
+    ## range   0.167944 0.00805698   0.150148 0.168929   0.180807 0.173359
+    ## nu      0.708947 0.02609210   0.669502 0.704957   0.768904 0.690036
 
 Let us compare with the true values of the parameters:
 
@@ -1007,9 +1007,9 @@ Let us compare with the true values of the parameters:
 ```
 
     ##   parameter true      mean      mode
-    ## 1   std.dev 1.30 1.3254998 1.3270698
-    ## 2     range 0.15 0.1696319 0.1699460
-    ## 3        nu 0.80 0.7014376 0.6984571
+    ## 1   std.dev 1.30 1.3255206 1.3312888
+    ## 2     range 0.15 0.1679437 0.1733588
+    ## 3        nu 0.80 0.7089465 0.6900357
 
 We can also plot the posterior marginal densities with the help of the
 [`gg_df()`](https://davidbolin.github.io/MetricGraph/reference/gg_df.metric_graph_spde_result.md)
@@ -1101,9 +1101,9 @@ function:
 ```
 
     ##             mean        sd 0.025quant 0.5quant 0.975quant     mode
-    ## std.dev 1.387390 0.1530930   1.119550 1.375430   1.719880 1.347170
-    ## range   0.182815 0.0463982   0.112218 0.175615   0.293166 0.161453
-    ## nu      0.693618 0.0913713   0.518008 0.692949   0.875335 0.694290
+    ## std.dev 1.396330 0.1542620   1.122940 1.385730   1.728080 1.362090
+    ## range   0.183290 0.0471311   0.108532 0.177236   0.292578 0.165725
+    ## nu      0.691571 0.0947691   0.515047 0.688406   0.886164 0.681687
 
 Let us compare with the true values of the parameters:
 
@@ -1127,9 +1127,9 @@ Let us compare with the true values of the parameters:
 ```
 
     ##   parameter true      mean      mode
-    ## 1   std.dev 1.30 1.3873943 1.3471661
-    ## 2     range 0.15 0.1828154 0.1614526
-    ## 3        nu 0.80 0.6936183 0.6942901
+    ## 1   std.dev 1.30 1.3963289 1.3620931
+    ## 2     range 0.15 0.1832900 0.1657251
+    ## 3        nu 0.80 0.6915711 0.6816870
 
 We can also plot the posterior marginal densities with the help of the
 [`gg_df()`](https://davidbolin.github.io/MetricGraph/reference/gg_df.metric_graph_spde_result.md)
@@ -1259,9 +1259,9 @@ function:
 ```
 
     ##             mean         sd 0.025quant 0.5quant 0.975quant     mode
-    ## std.dev 1.325500 0.02528080   1.275310 1.325800   1.374580 1.327070
-    ## range   0.169632 0.00735858   0.155220 0.169657   0.184095 0.169946
-    ## nu      0.701438 0.02300620   0.658059 0.700723   0.748326 0.698457
+    ## std.dev 1.325520 0.02490170   1.274070 1.326740   1.371440 1.331290
+    ## range   0.167944 0.00805698   0.150148 0.168929   0.180807 0.173359
+    ## nu      0.708947 0.02609210   0.669502 0.704957   0.768904 0.690036
 
 Let us compare with the true values of the parameters:
 
@@ -1285,9 +1285,9 @@ Let us compare with the true values of the parameters:
 ```
 
     ##   parameter true      mean      mode
-    ## 1   std.dev 1.30 1.3254998 1.3270698
-    ## 2     range 0.15 0.1696319 0.1699460
-    ## 3        nu 0.80 0.7014376 0.6984571
+    ## 1   std.dev 1.30 1.3255206 1.3312888
+    ## 2     range 0.15 0.1679437 0.1733588
+    ## 3        nu 0.80 0.7089465 0.6900357
 
 We can also plot the posterior marginal densities with the help of the
 [`gg_df()`](https://davidbolin.github.io/MetricGraph/reference/gg_df.metric_graph_spde_result.md)
@@ -1529,7 +1529,7 @@ summary(fit)
     ## Number of function calls by 'optim' = 501
     ## Optimization method used in 'optim' = Nelder-Mead
     ## 
-    ## Time used to:     fit the model =  30.45985 secs
+    ## Time used to:     fit the model =  30.06728 secs
 
 Let us plot the range parameter along the mesh, so we can see how it is
 varying:
@@ -1651,7 +1651,7 @@ summary(fit_ns_fixed_theta1)
     ## Number of function calls by 'optim' = 443
     ## Optimization method used in 'optim' = Nelder-Mead
     ## 
-    ## Time used to:     fit the model =  16.2634 secs
+    ## Time used to:     fit the model =  14.80583 secs
 
 Similarly, we can provide starting values for the entire theta vector
 with `start_theta`:
@@ -1707,7 +1707,7 @@ summary(fit_ns_start)
     ## Number of function calls by 'optim' = 502
     ## Optimization method used in 'optim' = Nelder-Mead
     ## 
-    ## Time used to:     fit the model =  24.08377 secs
+    ## Time used to:     fit the model =  23.23507 secs
 
 ### Fitting the inlabru rSPDE model
 
@@ -1784,32 +1784,32 @@ summary(rspde_fit_nonstat)
     ##     Additive/Linear/Rowwise: TRUE/TRUE/TRUE
     ##     Used components: effect[Intercept, field], latent[] 
     ## Time used:
-    ##     Pre = 0.147, Running = 71.7, Post = 0.103, Total = 71.9 
+    ##     Pre = 0.117, Running = 57.2, Post = 0.336, Total = 57.6 
     ## Fixed effects:
     ##             mean    sd 0.025quant 0.5quant 0.975quant   mode kld
-    ## Intercept 51.322 1.104     49.159   51.322     53.486 51.322   0
+    ## Intercept 50.999 1.518      48.02   50.999     53.977 50.999   0
     ## 
     ## Random effects:
     ##   Name     Model
     ##     field CGeneric
     ## 
     ## Model hyperparameters:
-    ##                                           mean    sd 0.025quant 0.5quant
-    ## Precision for the Gaussian observations  0.013 0.000      0.013    0.013
-    ## Theta1 for field                         2.927 0.003      2.922    2.927
-    ## Theta2 for field                         1.644 0.003      1.639    1.644
-    ## Theta3 for field                        -1.910 0.004     -1.918   -1.910
-    ## Theta4 for field                         3.429 0.003      3.422    3.429
-    ## Theta5 for field                         7.251 0.004      7.244    7.251
-    ##                                         0.975quant   mode
-    ## Precision for the Gaussian observations      0.013  0.013
-    ## Theta1 for field                             2.932  2.926
-    ## Theta2 for field                             1.650  1.645
-    ## Theta3 for field                            -1.903 -1.909
-    ## Theta4 for field                             3.436  3.429
-    ## Theta5 for field                             7.258  7.250
+    ##                                              mean       sd 0.025quant  0.5quant
+    ## Precision for the Gaussian observations 16237.350 1.75e+04   1682.260 10996.485
+    ## Theta1 for field                            4.020 2.05e-01      3.665     4.006
+    ## Theta2 for field                           -3.079 2.62e-01     -3.615    -3.072
+    ## Theta3 for field                           -0.279 3.29e-01     -0.957    -0.269
+    ## Theta4 for field                           -0.105 8.24e-01     -1.641    -0.132
+    ## Theta5 for field                           -0.788 5.75e-01     -1.750    -0.836
+    ##                                         0.975quant     mode
+    ## Precision for the Gaussian observations  62375.333 4573.237
+    ## Theta1 for field                             4.465    3.937
+    ## Theta2 for field                            -2.586   -3.040
+    ## Theta3 for field                             0.339   -0.225
+    ## Theta4 for field                             1.599   -0.257
+    ## Theta5 for field                             0.482   -1.073
     ## 
-    ## Marginal log-Likelihood:  -1192.54 
+    ## Marginal log-Likelihood:  -1536.57 
     ##  is computed 
     ## Posterior summaries for the linear predictor and the fitted values are computed
     ## (Posterior marginals needs also 'control.compute=list(return.marginals.predictor=TRUE)')
@@ -1821,23 +1821,15 @@ by using the function
 ``` r
 
 result_fit_nonstat <- rspde.result(rspde_fit_nonstat, "field", rspde_model_nonstat)
-```
-
-    ## Warning in rspde.result(rspde_fit_nonstat, "field", rspde_model_nonstat): the
-    ## mean or mode of nu is very close to nu.upper.bound, please consider increasing
-    ## nu.upper.bound, and refitting the model.
-
-``` r
-
 summary(result_fit_nonstat)
 ```
 
-    ##                   mean          sd 0.025quant 0.5quant 0.975quant     mode
-    ## Theta1.matern  2.92665 2.51292e-03    2.92185  2.92660    2.93176  2.92635
-    ## Theta2.matern  1.64446 2.80832e-03    1.63878  1.64450    1.64990  1.64468
-    ## Theta3.matern -1.90996 3.67760e-03   -1.91779 -1.90978   -1.90337 -1.90885
-    ## Theta4.matern  3.42931 3.47637e-03    3.42243  3.42932    3.43612  3.42938
-    ## nu             3.99716 1.00205e-05    3.99714  3.99716    3.99718  3.99716
+    ##                    mean       sd 0.025quant  0.5quant 0.975quant      mode
+    ## Theta1.matern  4.019850 0.205190   3.665250  4.006090   4.465270  3.936660
+    ## Theta2.matern -3.079130 0.261759  -3.615350 -3.072060  -2.585610 -3.040390
+    ## Theta3.matern -0.278921 0.329446  -0.956517 -0.269108   0.339172 -0.224773
+    ## Theta4.matern -0.104525 0.824409  -1.641420 -0.131968   1.599440 -0.257026
+    ## nu             1.291870 0.489997   0.594118  1.196460   2.458590  0.946578
 
 We can also plot the posterior densities. To this end we will use the
 [`gg_df()`](https://davidbolin.github.io/MetricGraph/reference/gg_df.metric_graph_spde_result.md)

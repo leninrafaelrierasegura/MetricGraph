@@ -648,7 +648,7 @@ summary(res)
     ## Number of function calls by 'optim' = 44
     ## Optimization method used in 'optim' = L-BFGS-B
     ## 
-    ## Time used to:     fit the model =  15.82915 secs
+    ## Time used to:     fit the model =  13.67902 secs
 
 We can obtain additional information by using
 [`glance()`](https://davidbolin.github.io/MetricGraph/reference/glance.graph_lme.md):
@@ -923,7 +923,7 @@ summary(res_exp)
     ## Number of function calls by 'optim' = 57
     ## Optimization method used in 'optim' = L-BFGS-B
     ## 
-    ## Time used to:     fit the model =  8.42653 secs
+    ## Time used to:     fit the model =  14.1725 secs
 
 We can also have a glance at the fitted model:
 
@@ -1035,7 +1035,7 @@ summary(res_gl)
     ## Number of function calls by 'optim' = 501
     ## Optimization method used in 'optim' = Nelder-Mead
     ## 
-    ## Time used to:     fit the model =  2.53501 secs
+    ## Time used to:     fit the model =  2.59099 secs
 
 We can also have a glance at the fitted model:
 
@@ -1154,7 +1154,7 @@ summary(res_gl_pred)
     ## Number of function calls by 'optim' = 501
     ## Optimization method used in 'optim' = Nelder-Mead
     ## 
-    ## Time used to:     fit the model =  3.13111 secs
+    ## Time used to:     fit the model =  3.0906 secs
 
 One should compare the estimates with the ones obtained in the model
 without the prediction locations.
@@ -1252,9 +1252,9 @@ spde_bru_result <- spde_metric_graph_result(spde_bru_fit,
 summary(spde_bru_result)
 ```
 
-    ##           mean        sd 0.025quant 0.5quant 0.975quant    mode
-    ## sigma 2.095080 0.1069460    1.89455 2.091810   2.311640 2.06504
-    ## range 0.187858 0.0257659    0.14282 0.185916   0.243852 0.18174
+    ##           mean        sd 0.025quant 0.5quant 0.975quant     mode
+    ## sigma 2.095730 0.1086870   1.890060 2.092340   2.314260 2.088160
+    ## range 0.187605 0.0257235   0.142706 0.185626   0.243546 0.181338
 
 Here we are showing the estimate of the practical correlation range
 ($`2/\kappa`$) instead of $`\kappa`$ since that is easier to interpret.
@@ -1277,9 +1277,9 @@ We now compare the means of the estimated values with the true values:
   print(result_df_bru)
 ```
 
-    ##   parameter true     mean      mode
-    ## 1   std.dev  2.0 2.095077 2.0650421
-    ## 2     range  0.2 0.187858 0.1817403
+    ##   parameter true      mean      mode
+    ## 1   std.dev  2.0 2.0957349 2.0881578
+    ## 2     range  0.2 0.1876046 0.1813376
 
 We can also plot the posterior marginal densities with the help of the
 [`gg_df()`](https://davidbolin.github.io/MetricGraph/reference/gg_df.metric_graph_spde_result.md)
